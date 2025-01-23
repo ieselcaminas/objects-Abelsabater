@@ -7,7 +7,6 @@ private String ID;
 private String titulo;
 private String usuario;
 private ArrayList<String>noticias;
-private String autor;
 
 public Publicaciones(String ID, String titulo, String usuario,ArrayList<String> noticias) {
     this.ID = ID;
