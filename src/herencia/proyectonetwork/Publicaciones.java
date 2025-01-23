@@ -6,13 +6,11 @@ public abstract class Publicaciones {
 private String ID;
 private String titulo;
 private String usuario;
-private ArrayList<String>noticias;
 
-public Publicaciones(String ID, String titulo, String usuario,ArrayList<String> noticias) {
+public Publicaciones(String ID, String titulo, String usuario) {
     this.ID = ID;
     this.titulo = titulo;
     this.usuario = usuario;
-    this.noticias = noticias;
 }
 
 public String getID() {
@@ -39,13 +37,6 @@ public void setUsuario(String usuario) {
     this.usuario = usuario;
 }
 
-public ArrayList<String> getNoticias() {
-    return noticias;
-}
-
-public void setNoticias(ArrayList<String> noticias) {
-    this.noticias = noticias;
-}
 public String toString(){
     return "Autor"+getUsuario()+"Noticia seleccionada:"+ getTitulo();
 }

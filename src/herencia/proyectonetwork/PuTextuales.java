@@ -3,8 +3,8 @@ package herencia.proyectonetwork;
 import java.util.ArrayList;
 public class PuTextuales extends Publicaciones {
 private String mensage;
-PuTextuales(String ID, String titulo, String usuario, ArrayList<String> noticias, String mensage){
-    super(ID,titulo,usuario,noticias);
+PuTextuales(String ID, String titulo, String usuario, String mensage){
+    super(ID,titulo,usuario);
     this.mensage=mensage;
 }
 
