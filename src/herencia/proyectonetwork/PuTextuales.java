@@ -3,9 +3,19 @@ package herencia.proyectonetwork;
 import java.util.ArrayList;
 public class PuTextuales extends Publicaciones {
 private String mensage;
+private String ID;
 PuTextuales(String ID, String titulo, String usuario, String mensage){
-    super(ID,titulo,usuario);
+    super(titulo,usuario);
+    this.ID=ID;
     this.mensage=mensage;
+}
+
+public String getID() {
+    return ID;
+}
+
+public void setID(String ID) {
+    this.ID = ID;
 }
 
 public String getMensage() {
@@ -21,7 +31,7 @@ public String mensage(){
 }
 @Override
 public String toString(){
-return "Autor"+getUsuario()+"Noticia seleccionada -->"+ getTitulo()+":"+getMensage();
+return "Autor: "+getUsuario()+", noticia seleccionada --> "+ getTitulo()+": "+getMensage();
 }
 
 }

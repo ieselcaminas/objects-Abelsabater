@@ -3,24 +3,13 @@ package herencia.proyectonetwork;
 import java.util.ArrayList;
 
 public abstract class Publicaciones {
-private String ID;
 private String titulo;
 private String usuario;
 
-public Publicaciones(String ID, String titulo, String usuario) {
-    this.ID = ID;
+public Publicaciones(String titulo, String usuario) { ;
     this.titulo = titulo;
     this.usuario = usuario;
 }
-
-public String getID() {
-    return ID;
-}
-
-public void setID(String ID) {
-    this.ID = ID;
-}
-
 public String getTitulo() {
     return titulo;
 }
