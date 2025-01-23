@@ -1,4 +1,4 @@
-package herencia;
+package herencia.animales;
 
 public abstract class Pez extends Animal{
 Pez(String nombre){

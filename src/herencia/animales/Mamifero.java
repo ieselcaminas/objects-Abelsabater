@@ -1,4 +1,4 @@
-package herencia;
+package herencia.animales;
 
 public abstract class Mamifero extends Animal{
 Mamifero(String nombre){
