@@ -1,7 +1,4 @@
 package herencia.proyectonetwork;
-
-import java.util.ArrayList;
-
 public class PuFotograficas extends Publicaciones{
 private String imagenpng;
 PuFotograficas(String titulo, Usuario usuario,String imagenpng){

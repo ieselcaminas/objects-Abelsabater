@@ -1,16 +1,13 @@
 package herencia.proyectonetwork;
-
 public class Usuario {
 private String nombre;
 private String nick;
 private int anoscotizados;
-
 public Usuario(String nombre,String nick, int anoscotizados) {
     this.nombre = nombre;
     this.nick = nick;
     this.anoscotizados = anoscotizados;
 }
-
 public String getNombre() {
     return nombre;
 }

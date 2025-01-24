@@ -1,8 +1,6 @@
 package herencia.proyectonetwork;
-
 import java.util.ArrayList;
 import java.util.List;
-
 public class Main {
 public static void main(String[] args) {
     List<Publicaciones> publicacionesList=new ArrayList<>();
@@ -12,14 +10,11 @@ publicacionesList.add(puTextuales);
     usuario=new Usuario("Ana","anita34234",39);
 PuFotograficas puFotograficas=new PuFotograficas("sdsdo",usuario,"imagen.png");
     publicacionesList.add(puFotograficas);
-
     publicacionesde("Pedro",publicacionesList);
-
 }
 private static void publicacionesde(String nombre, List<Publicaciones> publicaciones){
     publicaciones.stream()
             .filter(p->p.getUsuario().getNombre().contains(nombre))
             .forEach(System.out::println);
-
 }
 }

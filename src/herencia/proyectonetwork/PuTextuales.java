@@ -1,6 +1,4 @@
 package herencia.proyectonetwork;
-
-import java.util.ArrayList;
 public class PuTextuales extends Publicaciones {
 private String mensage;
 private String ID;
