@@ -5,12 +5,12 @@ import java.util.Date;
 
 public abstract class Publicaciones {
 private String titulo;
-private String usuario;
+private Usuario usuario;
 private int megusta;
 private Date fecha;
 
-public Publicaciones(String titulo, String usuario) {
-    ;
+public Publicaciones(String titulo, Usuario usuario) {
+
     this.titulo = titulo;
     this.usuario = usuario;
     this.megusta = 0;
@@ -41,11 +41,11 @@ public void setTitulo(String titulo) {
     this.titulo = titulo;
 }
 
-public String getUsuario() {
+public Usuario getUsuario() {
     return usuario;
 }
 
-public void setUsuario(String usuario) {
+public void setUsuario(Usuario usuario) {
     this.usuario = usuario;
 }
 

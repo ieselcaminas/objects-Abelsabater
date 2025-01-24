@@ -6,17 +6,19 @@ import java.util.List;
 public class Main {
 public static void main(String[] args) {
     List<Publicaciones> publicacionesList=new ArrayList<>();
-PuTextuales puTextuales=new PuTextuales("2094057M","ferfrfr","Juan Martinez de la Cruz","gscdvdghcdgy");
+    Usuario usuario=new Usuario("Pedro","pedrito0957",22);
+PuTextuales puTextuales=new PuTextuales("2094057M","ferfrfr",usuario,"gscdvdghcdgy");
 publicacionesList.add(puTextuales);
-PuFotograficas puFotograficas=new PuFotograficas("sdsdo","Juan Martinez de la Cruz","imagen.png");
+    usuario=new Usuario("Ana","anita34234",39);
+PuFotograficas puFotograficas=new PuFotograficas("sdsdo",usuario,"imagen.png");
     publicacionesList.add(puFotograficas);
 
-    publicacionesde("Juan Martinez de la Cruz",publicacionesList);
+    publicacionesde("Pedro",publicacionesList);
 
 }
-private static void publicacionesde( String nombre, List<Publicaciones> publicaciones){
+private static void publicacionesde(String nombre, List<Publicaciones> publicaciones){
     publicaciones.stream()
-            .filter(p->p.getUsuario().contains(nombre))
+            .filter(p->p.getUsuario().getNombre().contains(nombre))
             .forEach(System.out::println);
 
 }

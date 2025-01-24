@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class PuTextuales extends Publicaciones {
 private String mensage;
 private String ID;
-PuTextuales(String ID, String titulo, String usuario, String mensage){
+PuTextuales(String ID, String titulo, Usuario usuario, String mensage){
     super(titulo,usuario);
     this.ID=ID;
     this.mensage=mensage;

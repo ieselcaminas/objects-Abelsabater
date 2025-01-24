@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PuFotograficas extends Publicaciones{
 private String imagenpng;
-PuFotograficas(String titulo, String usuario,String imagenpng){
+PuFotograficas(String titulo, Usuario usuario,String imagenpng){
     super(titulo,usuario);
     this.imagenpng=imagenpng;
 }
