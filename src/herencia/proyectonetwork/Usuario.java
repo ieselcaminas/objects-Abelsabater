@@ -33,6 +33,6 @@ public void setAnoscotizados(int anoscotizados) {
 }
 @Override
 public String toString(){
-    return getNombre()+" usuario es: "+getNick()+" lleva cotizando "+getAnoscotizados()+" años";
+    return getNombre()+" su usuario es: "+getNick()+" lleva cotizando "+getAnoscotizados()+" años";
 }
 }
