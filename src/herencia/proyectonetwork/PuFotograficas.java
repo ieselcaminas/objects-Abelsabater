@@ -16,6 +16,6 @@ public void setImagenpng(String imagenpng) {
 }
 @Override
 public String toString(){
-    return "Autor: "+getUsuario()+", noticia seleccionada --> "+getTitulo()+": "+getImagenpng() +"  likes: "+getMegusta();
+    return getFecha()+" Autor: "+getUsuario()+", noticia seleccionada --> "+getTitulo()+": "+getImagenpng() +"  likes: "+getMegusta();
 }
 }

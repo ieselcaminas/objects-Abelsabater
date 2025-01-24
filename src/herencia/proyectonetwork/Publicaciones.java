@@ -1,17 +1,28 @@
 package herencia.proyectonetwork;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public abstract class Publicaciones {
 private String titulo;
 private String usuario;
 private int megusta;
+private Date fecha;
 
 public Publicaciones(String titulo, String usuario) {
     ;
     this.titulo = titulo;
     this.usuario = usuario;
     this.megusta = 0;
+    this.fecha= fecha;
+}
+
+public Date getFecha() {
+    return fecha;
+}
+
+public void setFecha(Date fecha) {
+    this.fecha = fecha;
 }
 
 public int getMegusta() {
@@ -39,6 +50,6 @@ public void setUsuario(String usuario) {
 }
 
 public String toString() {
-    return "Autor" + getUsuario() + "Noticia seleccionada:" + getTitulo();
+    return "Autor" + getUsuario() + "Noticia seleccionada:" + getTitulo()+" fecha publicado" +getFecha();
 }
 }
