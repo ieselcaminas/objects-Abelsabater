@@ -10,7 +10,7 @@ publicaciones.add(puTextuales);
     usuario=new Usuario("Ana","anita34234",39);
 PuFotografica puFotograficas=new PuFotografica("sdsdo",usuario,"imagen.png");
     publicaciones.add(puFotograficas);
-    publicacionesde("Ana",publicaciones);
+    publicacionesde("Pedro",publicaciones);
 }
 private static void publicacionesde(String nombre, List<Publicacion> publicaciones){
     publicaciones.stream()
