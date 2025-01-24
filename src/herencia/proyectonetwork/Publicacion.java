@@ -1,15 +1,14 @@
 package herencia.proyectonetwork;
 
-import java.util.ArrayList;
 import java.util.Date;
 
-public abstract class Publicaciones {
+public abstract class Publicacion {
 private String titulo;
 private Usuario usuario;
 private int megusta;
 private Date fecha;
 
-public Publicaciones(String titulo, Usuario usuario) {
+public Publicacion(String titulo, Usuario usuario) {
 
     this.titulo = titulo;
     this.usuario = usuario;

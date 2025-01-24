@@ -1,5 +1,5 @@
 package herencia.proyectonetwork;
-public class PuFotografica extends Publicaciones{
+public class PuFotografica extends Publicacion {
 private String imagenpng;
 PuFotografica(String titulo, Usuario usuario, String imagenpng){
     super(titulo,usuario);
