@@ -31,7 +31,7 @@ public String mensage(){
 }
 @Override
 public String toString(){
-return getFecha()+"Autor: "+getUsuario()+", noticia seleccionada --> "+ getTitulo()+": "+getMensage() +"  likes: "+getMegusta();
+return getFecha()+" Autor: "+getUsuario()+", noticia seleccionada --> "+ getTitulo()+": "+getMensage() +"  likes: "+getMegusta();
 }
 
 }

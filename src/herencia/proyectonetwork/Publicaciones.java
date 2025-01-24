@@ -14,7 +14,7 @@ public Publicaciones(String titulo, String usuario) {
     this.titulo = titulo;
     this.usuario = usuario;
     this.megusta = 0;
-    this.fecha= fecha;
+    this.fecha= new Date();
 }
 
 public Date getFecha() {
