@@ -1,8 +1,8 @@
 package herencia.proyectonetwork;
-public class PuTextuales extends Publicaciones {
+public class PuTextual extends Publicaciones {
 private String mensage;
 private String ID;
-PuTextuales(String ID, String titulo, Usuario usuario, String mensage){
+PuTextual(String ID, String titulo, Usuario usuario, String mensage){
     super(titulo,usuario);
     this.ID=ID;
     this.mensage=mensage;

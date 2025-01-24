@@ -1,7 +1,7 @@
 package herencia.proyectonetwork;
-public class PuFotograficas extends Publicaciones{
+public class PuFotografica extends Publicaciones{
 private String imagenpng;
-PuFotograficas(String titulo, Usuario usuario,String imagenpng){
+PuFotografica(String titulo, Usuario usuario, String imagenpng){
     super(titulo,usuario);
     this.imagenpng=imagenpng;
 }

@@ -5,10 +5,10 @@ public class Main {
 public static void main(String[] args) {
     List<Publicaciones> publicacionesList=new ArrayList<>();
     Usuario usuario=new Usuario("Pedro","pedrito0957",22);
-PuTextuales puTextuales=new PuTextuales("2094057M","ferfrfr",usuario,"gscdvdghcdgy");
+PuTextual puTextuales=new PuTextual("2094057M","ferfrfr",usuario,"gscdvdghcdgy");
 publicacionesList.add(puTextuales);
     usuario=new Usuario("Ana","anita34234",39);
-PuFotograficas puFotograficas=new PuFotograficas("sdsdo",usuario,"imagen.png");
+PuFotografica puFotograficas=new PuFotografica("sdsdo",usuario,"imagen.png");
     publicacionesList.add(puFotograficas);
     publicacionesde("Pedro",publicacionesList);
 }
