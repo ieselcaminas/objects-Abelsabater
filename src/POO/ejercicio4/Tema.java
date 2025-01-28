@@ -1,4 +1,4 @@
-package POO;
+package POO.ejercicio4;
 
 public class Tema {
 private String nombre;

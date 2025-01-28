@@ -1,6 +1,4 @@
-package POO;
-
-import java.time.LocalDate;
+package POO.ejercicio4;
 
 public class Autor {
 private String nombre;

@@ -1,4 +1,4 @@
-package POO;
+package POO.ejercicio4;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package POO;
+package POO.ejercicio3;
 
 public class Cuenta {
 private String titular;
@@ -23,18 +23,16 @@ public double getCantidad() {
 public void setCantidad(double cantidad) {
     this.cantidad = cantidad;
 }
-public double ingresarcantidad(double cant){
-    if(cant<0){
-        return this.cantidad;
-    }else{
-        return cant+this.cantidad;
+public void ingresarcantidad(double cant){
+    if(cant>0){
+        this.cantidad=+cant;
     }
 }
-public double quitarcantidad(double cant){
+public void quitarcantidad(double cant){
     if(cant<0 || cant>this.cantidad){
-        return this.cantidad;
+        this.cantidad=this.cantidad;
     }else{
-        return this.cantidad-cant;
+        this.cantidad=getCantidad()-cant;
     }
 }
 public String toString(){
