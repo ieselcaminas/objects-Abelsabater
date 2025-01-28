@@ -8,4 +8,7 @@ public Tema(String nombre) {
 public String getNombre() {
     return nombre;
 }
+public String toString(){
+    return getNombre();
+}
 }

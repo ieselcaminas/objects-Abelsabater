@@ -4,9 +4,9 @@ import java.time.LocalDate;
 
 public class Autor {
 private String nombre;
-private LocalDate fecha;
+private String fecha;
 
-public Autor(String nombre, LocalDate fecha) {
+public Autor(String nombre, String fecha) {
     this.nombre = nombre;
     this.fecha = fecha;
 }
@@ -18,7 +18,10 @@ public String getNombre() {
     return nombre;
 }
 
-public LocalDate getFecha() {
+public String getFecha() {
     return fecha;
+}
+public String toString(){
+    return getNombre()+" nacio el "+getFecha();
 }
 }

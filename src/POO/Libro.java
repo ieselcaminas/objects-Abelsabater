@@ -6,7 +6,7 @@ public class Libro {
 private String titulo;
 private Autor autor;
 private int paginas;
-private List<Tema> temas;
+private List<Tema>temas;
 
 public Libro(String titulo, Autor autor, int paginas, List<Tema> temas) {
     this.titulo = titulo;
@@ -29,5 +29,8 @@ public int getPaginas() {
 
 public List<Tema> getTemas() {
     return temas;
+}
+public String toString(){
+    return getTitulo()+" escrito por "+getAutor().getNombre()+" tiene "+getPaginas()+" paginas y trata "+getTemas();
 }
 }
