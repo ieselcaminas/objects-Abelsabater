@@ -20,7 +20,7 @@ public static void main(String[] args) {
     tema=new Tema("Suspense");
     temas.add(tema);
     autor=new Autor("Manel","5 de marzo de 1969");
-    libro=new Libro("Los cuatro cerditos",autor,9,temas);
+    libro=new Libro("Los tres cerditos",autor,9,temas);
     System.out.println(autor+" ---------> "+libro);
 }
 }
