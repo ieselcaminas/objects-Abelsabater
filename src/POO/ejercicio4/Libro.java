@@ -1,5 +1,6 @@
 package POO.ejercicio4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Libro {
@@ -8,11 +9,11 @@ private Autor autor;
 private int paginas;
 private List<Tema>temas;
 
-public Libro(String titulo, Autor autor, int paginas, List<Tema> temas) {
+public Libro(String titulo, Autor autor, int paginas) {
     this.titulo = titulo;
     this.autor = autor;
     this.paginas = paginas;
-    this.temas = temas;
+    this.temas = new ArrayList<>();
 }
 
 public String getTitulo() {
@@ -32,5 +33,8 @@ public List<Tema> getTemas() {
 }
 public String toString(){
     return getTitulo()+" escrito por "+getAutor().getNombre()+" tiene "+getPaginas()+" paginas y trata "+getTemas();
+}
+public void addtemas(Tema tema){
+    this.temas.add(tema);
 }
 }

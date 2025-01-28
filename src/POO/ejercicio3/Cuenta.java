@@ -25,13 +25,11 @@ public void setCantidad(double cantidad) {
 }
 public void ingresarcantidad(double cant){
     if(cant>0){
-        this.cantidad=+cant;
+        this.cantidad=getCantidad()+cant;
     }
 }
 public void quitarcantidad(double cant){
-    if(cant<0 || cant>this.cantidad){
-        this.cantidad=this.cantidad;
-    }else{
+    if(cant>0 && cant<this.cantidad){
         this.cantidad=getCantidad()-cant;
     }
 }
