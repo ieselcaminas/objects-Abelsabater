@@ -4,12 +4,19 @@ public class Prestec {
 private int num_p;
 private int cant;
 private Cliente cliente;
+private Sucursal sucursal;
 
-public Prestec(int num_p, Cliente cliente, int cant) {
+public Prestec(int num_p, Cliente cliente, int cant,Sucursal sucursal) {
     this.num_p = num_p;
     this.cliente = cliente;
     this.cant = cant;
+    this.sucursal=sucursal;
 }
+
+public Sucursal getSucursal() {
+    return sucursal;
+}
+
 public int getCant() {
     return cant;
 }
