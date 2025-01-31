@@ -39,6 +39,6 @@ public Banco getBanco() {
 }
 @Override
 public String toString(){
-    return this.n_suc+"-->"+this.localizacion;
+    return this.n_suc+"-->"+this.localizacion+"-->"+this.banco;
 }
 }

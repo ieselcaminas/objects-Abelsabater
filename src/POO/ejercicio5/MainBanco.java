@@ -19,7 +19,7 @@ public static void main(String[] args) {
        cliente.addprestecs(prestec);
        b1.addprestecs(prestec);
     for (int i = 0; i < banco.getSucursales().size(); i++) {
-        System.out.println(banco.getSucursales().get(i).getLocalizacion());
+        System.out.println(banco.getSucursales().get(i));
     }
     System.out.println(cliente.getPrestecs());
 
@@ -37,7 +37,7 @@ public static void main(String[] args) {
     cliente2.addprestecs(prestec2);
     b1.addprestecs(prestec2);
     for (int i = 0; i < banco2.getSucursales().size(); i++) {
-        System.out.println(banco2.getSucursales().get(i).getLocalizacion());
+        System.out.println(banco2.getSucursales().get(i));
     }
     System.out.println(cliente2.getPrestecs());
 }
