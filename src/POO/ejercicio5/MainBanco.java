@@ -25,7 +25,7 @@ public static void main(String[] args) {
      domiciliacio=new Domiciliacio(1,"Parc Ribalta 6",compteCorrent);
     compteCorrent.adddomiciliacio(domiciliacio);
     cliente.addcomptecorrent(compteCorrent);
-
+    bancos.add(banco);
 
     Banco banco2=new Banco(654,"Caixa Rural");
         b1=new Sucursal(23,banco,"Gibraltar");
@@ -39,13 +39,28 @@ public static void main(String[] args) {
     prestec2=new Prestec(14,cliente2,5000000,b1);
     cliente2.addprestecs(prestec2);
     b1.addprestecs(prestec2);
-     compteCorrent=new CompteCorrent(1,"Abelsaba06","dzQe9300",b1);
+     compteCorrent=new CompteCorrent(1,"HS2013","dzQe9300",b1);
      domiciliacio=new Domiciliacio(1,"Bodega 13",compteCorrent);
     compteCorrent.addcliente(cliente2);
     compteCorrent.adddomiciliacio(domiciliacio);
     domiciliacio=new Domiciliacio(1,"Parc Ribalta 6",compteCorrent);
     compteCorrent.adddomiciliacio(domiciliacio);
     cliente2.addcomptecorrent(compteCorrent);
+    bancos.add(banco2);
+    for (Banco b:bancos){
+        for (Sucursal s:b.getSucursales()){
+            System.out.println(s);
+            for (Prestec p: s.getPrestecs()){
+                System.out.println(p);
+            }
+            for (CompteCorrent c: cliente.getCompteCorrents()){
+                System.out.println(c);
+                for (Domiciliacio d: c.getDomiciliacions()){
+                    System.out.println(d);
+                }
+            }
+        }
+    }
 
 }
 }
