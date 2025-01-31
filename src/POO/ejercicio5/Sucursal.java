@@ -26,6 +26,10 @@ public void setLocalizacion(String localizacion) {
     this.localizacion = localizacion;
 }
 
+public List<Prestec> getPrestecs() {
+    return prestecs;
+}
+
 public int getN_suc() {
     return n_suc;
 }

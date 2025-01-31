@@ -20,6 +20,10 @@ public String getDNI() {
     return DNI;
 }
 
+public List<Prestec> getPrestecs() {
+    return prestecs;
+}
+
 public String getNombrecompleto() {
     return nombrecompleto;
 }
