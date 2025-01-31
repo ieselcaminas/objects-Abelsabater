@@ -9,6 +9,7 @@ private String nombre;
 private String contrasena;
 private Sucursal sucursal;
 private List<Cliente> clientes;
+private List<Domiciliacio>domiciliacions;
 
 public CompteCorrent(int n_cc, String nombre, String contrasena, Sucursal sucursal) {
     this.n_cc = n_cc;
@@ -16,6 +17,15 @@ public CompteCorrent(int n_cc, String nombre, String contrasena, Sucursal sucurs
     this.contrasena = contrasena;
     this.sucursal=sucursal;
     this.clientes=new ArrayList<>();
+    this.domiciliacions=new ArrayList<>();
+}
+
+public List<Domiciliacio> getDomiciliacions() {
+    return domiciliacions;
+}
+
+public void adddomiciliacio(Domiciliacio domiciliacio) {
+    this.domiciliacions.add(domiciliacio);
 }
 
 public List<Cliente> getClientes() {
