@@ -26,4 +26,8 @@ public CompteCorrent getCompteCorrent() {
 public int getNum_d() {
     return num_d;
 }
+@Override
+public String toString(){
+    return this.calle;
+}
 }
