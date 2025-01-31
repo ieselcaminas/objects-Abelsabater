@@ -1,5 +1,4 @@
 package POO.ejercicio5;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,19 +20,15 @@ public void addprestecs(Prestec prestec){
 public String getLocalizacion() {
     return localizacion;
 }
-
 public void setLocalizacion(String localizacion) {
     this.localizacion = localizacion;
 }
-
 public List<Prestec> getPrestecs() {
     return prestecs;
 }
-
 public int getN_suc() {
     return n_suc;
 }
-
 public Banco getBanco() {
     return banco;
 }

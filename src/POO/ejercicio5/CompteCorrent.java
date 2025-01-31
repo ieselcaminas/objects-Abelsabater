@@ -1,5 +1,4 @@
 package POO.ejercicio5;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,39 +18,30 @@ public CompteCorrent(int n_cc, String nombre, String contrasena, Sucursal sucurs
     this.clientes=new ArrayList<>();
     this.domiciliacions=new ArrayList<>();
 }
-
 public List<Domiciliacio> getDomiciliacions() {
     return domiciliacions;
 }
-
 public void adddomiciliacio(Domiciliacio domiciliacio) {
     this.domiciliacions.add(domiciliacio);
 }
-
 public List<Cliente> getClientes() {
     return clientes;
 }
-
 public void addcliente(Cliente cliente) {
     this.clientes.add(cliente);
 }
-
 public int getN_cc() {
     return n_cc;
 }
-
 public String getNombre() {
     return nombre;
 }
-
 public void setNombre(String nombre) {
     this.nombre = nombre;
 }
-
 public String getContrasena() {
     return contrasena;
 }
-
 public void setContrasena(String contrasena) {
     this.contrasena = contrasena;
 }
