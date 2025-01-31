@@ -1,16 +1,23 @@
 package POO.ejercicio5;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Sucursal {
 private int n_suc;
 private String localizacion;
 private Banco banco;
+private List<Prestec> prestecs;
 
 public Sucursal(int n_suc, Banco banco, String localizacion) {
     this.n_suc = n_suc;
     this.banco = banco;
     this.localizacion = localizacion;
+    this.prestecs=new ArrayList<>();
 }
-
+public void addprestecs(Prestec prestec){
+    prestecs.add(prestec);
+}
 public String getLocalizacion() {
     return localizacion;
 }
