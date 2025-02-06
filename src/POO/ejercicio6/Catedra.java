@@ -51,4 +51,8 @@ public Departament getDepartament() {
 public void setDepartament(Departament departament) {
     this.departament = departament;
 }
+@Override
+public String toString() {
+    return "Exemplar:" + getNombre();
+}
 }

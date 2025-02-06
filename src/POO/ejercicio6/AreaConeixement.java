@@ -27,4 +27,8 @@ public void setNom(String nom) {
 public int getId() {
     return id;
 }
+@Override
+public String toString() {
+    return "Exemplar:" + getNom();
+}
 }

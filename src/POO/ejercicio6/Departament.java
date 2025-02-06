@@ -40,4 +40,8 @@ public AreaConeixement getAreaConeixement() {
 public void setAreaConeixement(AreaConeixement areaConeixement) {
     this.areaConeixement = areaConeixement;
 }
+@Override
+public String toString() {
+    return "Exemplar:" + getNombre();
+}
 }
