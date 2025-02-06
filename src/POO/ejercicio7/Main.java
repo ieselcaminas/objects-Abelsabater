@@ -15,7 +15,12 @@ public static void main(String[] args) {
     editorials.add(edebe);
     Editorial hols=new Editorial(2,"Hols");
     editorials.add(hols);
-    LLibre lLibre=new LLibre("Los 3 cerditos",1,hols,terror);
+        Autor ximoPuig=new Autor(1,"XimoPuig");
+        LLibre lLibre=new LLibre("Los 3 cerditos",1,hols,terror);
+        lLibre.add(ximoPuig);
+        ximoPuig.add(lLibre);
+        terror.add(lLibre);
+        hols.add(lLibre);
 
 }
 }
