@@ -30,4 +30,8 @@ public void setNombre(String nombre) {
 public List<Exemplar> getExemplars() {
     return exemplars;
 }
+@Override
+public String toString() {
+    return "Exemplar:" + getNombre();
+}
 }

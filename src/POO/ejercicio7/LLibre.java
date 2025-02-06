@@ -57,4 +57,8 @@ public Tema getTema() {
 public void setTema(Tema tema) {
     this.tema = tema;
 }
+@Override
+public String toString() {
+    return "Exemplar:" + getNombre();
+}
 }

@@ -33,4 +33,9 @@ public void add(LLibre lLibre) {
 public List<LLibre> getlLibres() {
     return lLibres;
 }
+
+@Override
+public String toString() {
+    return "Autor: "+getNombre();
+}
 }
