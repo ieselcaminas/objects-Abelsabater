@@ -39,6 +39,6 @@ public void setDepartament(Departament departament) {
 }
 @Override
 public String toString() {
-    return "Exemplar:" + getNom();
+    return getId()+"Exemplar:" + getNom();
 }
 }
