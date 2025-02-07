@@ -27,4 +27,5 @@ public static void main(String[] args) {
             excer.add(lector1);
             lector1.add(excer);
 }
+
 }
