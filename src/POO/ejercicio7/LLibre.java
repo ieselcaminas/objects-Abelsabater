@@ -19,7 +19,12 @@ public LLibre(String nombre, int id, Editorial editorial, Tema tema) {
     this.autors=new ArrayList<>();
     this.exemplars=new ArrayList<>();
 }
-public void add(Exemplar exemplar) {
+
+    public List<Exemplar> getExemplars() {
+        return exemplars;
+    }
+
+    public void add(Exemplar exemplar) {
     this.exemplars.add(exemplar);
 }
 public List<Autor> getAutors() {
