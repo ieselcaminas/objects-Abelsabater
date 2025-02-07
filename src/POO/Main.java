@@ -1,4 +1,6 @@
-package POO.ejercicio7;
+package POO;
+
+import POO.ejercicio7.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,5 +29,4 @@ public static void main(String[] args) {
             excer.add(lector1);
             lector1.add(excer);
 }
-
 }
