@@ -1,6 +1,4 @@
-package POO;
-
-import POO.ejercicio7.*;
+package POO.ejercicio7;
 
 import java.util.ArrayList;
 import java.util.List;
