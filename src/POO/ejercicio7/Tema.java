@@ -32,7 +32,7 @@ public void setNombre(String nombre) {
 }
 @Override
 public String toString() {
-    return "Tematica:" + getNombre();
+    return "Tematica: " + getNombre();
 }
 
 }

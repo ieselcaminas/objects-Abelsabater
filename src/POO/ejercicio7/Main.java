@@ -26,5 +26,9 @@ public static void main(String[] args) {
             Lector lector1=new Lector("20970899M","Abel");
             excer.add(lector1);
             lector1.add(excer);
+    System.out.println(ximoPuig);
+    System.out.println("\t"+cerdos);
+    System.out.println("\t\t"+cerdos.getTema());
+    System.out.println("\t\t"+cerdos.getEditorial());
 }
 }

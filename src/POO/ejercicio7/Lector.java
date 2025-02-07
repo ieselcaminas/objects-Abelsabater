@@ -32,7 +32,7 @@ public List<Exemplar> getExemplars() {
 }
 @Override
 public String toString() {
-    return "Nombre:" + getNombre();
+    return "Nombre: " + getNombre();
 }
 
 }

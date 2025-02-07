@@ -59,7 +59,7 @@ public void setTema(Tema tema) {
 }
 @Override
 public String toString() {
-    return "Llibre:" + getNombre();
+    return "Llibre: " + getNombre();
 }
 
 }
