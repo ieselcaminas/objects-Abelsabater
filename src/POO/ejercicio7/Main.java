@@ -24,14 +24,13 @@ public static void main(String[] args) {
             Exemplar excer=new Exemplar(1,"Exemplar1",cerdos);
             cerdos.add(excer);
             Lector lector1=new Lector("20970899M","Abel");
-            excer.add(lector1);
             lector1.add(excer);
     System.out.println(ximoPuig);
     System.out.println("\t"+cerdos);
     System.out.println("\t\t"+cerdos.getTema());
     System.out.println("\t\t"+cerdos.getEditorial());
     System.out.println("\t\t"+cerdos.getExemplars());
-    System.out.println("\t\t\t"+excer.getLectors());
+    System.out.println("\t\t\t"+excer.getLector());
     System.out.println("\t\t\t"+lector1.getExemplars().get(0)+"-->"+lector1.getExemplars().get(0).getlLibre());
 }
 }
