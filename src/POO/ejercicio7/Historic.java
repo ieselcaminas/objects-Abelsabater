@@ -1,33 +1,32 @@
 package POO.ejercicio7;
-import java.util.List;
 
 public class Historic {
-    private List<Exemplar>exemplars;
-    private List<Autor>autors;
+    private Exemplar exemplar;
+    private Autor autor;
     private String datei;
     private String datef;
 
-    public Historic(List<Exemplar> exemplars, List<Autor> autors) {
-        this.exemplars = exemplars;
-        this.autors = autors;
+    public Historic(Exemplar exemplars, Autor autors) {
+        this.exemplar = exemplars;
+        this.autor = autors;
         this.datei= "";
         this.datef= "";
     }
 
-    public List<Exemplar> getExemplars() {
-        return exemplars;
+    public Exemplar getExemplar() {
+        return exemplar;
     }
 
-    public void setExemplars(List<Exemplar> exemplars) {
-        this.exemplars = exemplars;
+    public void setExemplar(Exemplar exemplar) {
+        this.exemplar = exemplar;
     }
 
-    public List<Autor> getAutors() {
-        return autors;
+    public Autor getAutors() {
+        return autor;
     }
 
-    public void setAutors(List<Autor> autors) {
-        this.autors = autors;
+    public void setAutors(Autor autors) {
+        this.autor = autors;
     }
 
     public String getDatei() {
