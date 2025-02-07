@@ -35,6 +35,5 @@ public void setNombre(String nombre) {
 public String toString() {
     return "Editorial:" + getNombre();
 }
-
 }
 

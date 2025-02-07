@@ -42,5 +42,4 @@ public void setNombre(String nombre) {
 public String toString() {
     return "Exemplar:" + getNombre();
 }
-
 }

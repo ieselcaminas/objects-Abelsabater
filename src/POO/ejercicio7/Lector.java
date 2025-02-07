@@ -34,5 +34,4 @@ public List<Exemplar> getExemplars() {
 public String toString() {
     return "Nombre:" + getNombre();
 }
-
 }

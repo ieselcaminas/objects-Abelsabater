@@ -61,5 +61,4 @@ public void setTema(Tema tema) {
 public String toString() {
     return "Llibre:" + getNombre();
 }
-
 }

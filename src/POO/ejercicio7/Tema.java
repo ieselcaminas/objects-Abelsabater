@@ -34,6 +34,4 @@ public void setNombre(String nombre) {
 public String toString() {
     return "Tematica:" + getNombre();
 }
-
-
 }

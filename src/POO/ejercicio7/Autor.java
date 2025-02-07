@@ -38,5 +38,4 @@ public List<LLibre> getlLibres() {
 public String toString() {
     return "Autor: "+getNombre();
 }
-
 }
