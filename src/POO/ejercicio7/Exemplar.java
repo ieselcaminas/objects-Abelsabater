@@ -6,7 +6,7 @@ private String nombre;
 private LLibre lLibre;
 private Lector lector;
 
-    public Exemplar(int n_reg, String nombre, LLibre lLibre) {
+    public Exemplar(int n_reg, String nombre, LLibre lLibre,Lector lector) {
         this.n_reg = n_reg;
         this.nombre = nombre;
         this.lLibre = lLibre;

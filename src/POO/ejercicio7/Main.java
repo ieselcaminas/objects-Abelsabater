@@ -21,10 +21,12 @@ public static void main(String[] args) {
         ximoPuig.add(cerdos);
         terror.add(cerdos);
         hols.add(cerdos);
-            Exemplar excer=new Exemplar(1,"Exemplar1",cerdos);
-            cerdos.add(excer);
             Lector lector1=new Lector("20970899M","Abel");
-            lector1.add(excer);
+                Exemplar excer=new Exemplar(1,"Exemplar1",cerdos,lector1);
+                lector1.add(excer);
+            cerdos.add(excer);
+
+
     System.out.println(ximoPuig);
     System.out.println("\t"+cerdos);
     System.out.println("\t\t"+cerdos.getTema());
