@@ -33,7 +33,7 @@ public void setNombre(String nombre) {
 }
 @Override
 public String toString() {
-    return "Exemplar:" + getNombre();
+    return "Editorial:" + getNombre();
 }
 }
 

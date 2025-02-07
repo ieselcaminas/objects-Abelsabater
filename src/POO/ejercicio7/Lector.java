@@ -32,6 +32,6 @@ public List<Exemplar> getExemplars() {
 }
 @Override
 public String toString() {
-    return "Exemplar:" + getNombre();
+    return "Nombre:" + getNombre();
 }
 }
