@@ -15,7 +15,7 @@ public static void main(String[] args) {
     editorials.add(edebe);
     Editorial hols=new Editorial(2,"Hols");
     editorials.add(hols);
-        Autor ximoPuig=new Autor(1,"XimoPuig");
+        Autor ximoPuig=new Autor(1,"Ximo Puig");
         LLibre cerdos=new LLibre("Los 3 cerditos",1,hols,terror);
         cerdos.add(ximoPuig);
         ximoPuig.add(cerdos);
@@ -32,5 +32,6 @@ public static void main(String[] args) {
     System.out.println("\t\t"+cerdos.getEditorial());
     System.out.println("\t\t"+cerdos.getExemplars());
     System.out.println("\t\t\t"+excer.getLectors());
+    System.out.println("\t\t\t"+lector1.getExemplars().get(0)+"-->"+lector1.getExemplars().get(0).getlLibre());
 }
 }
