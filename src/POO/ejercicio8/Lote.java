@@ -17,6 +17,18 @@ public class Lote {
 
     }
 
+    public void setArticulos(List<Articulo> articulos) {
+        this.articulos = articulos;
+    }
+
+    public List<Puja> getPujas() {
+        return pujas;
+    }
+
+    public void setPujas(List<Puja> pujas) {
+        this.pujas = pujas;
+    }
+
     public int getCod() {
         return cod;
     }

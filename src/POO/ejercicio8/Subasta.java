@@ -23,4 +23,16 @@ public class Subasta {
     public void addL(Lote lote){
         this.lotes.add(lote);
     }
+
+    public double haganado(){
+        double puj=0;
+        for (Lote lot:lotes){
+            for (Puja puja:lot.getPujas()){
+                if(puja.getCantidad()>puj){
+                    puj=puja.getCantidad();
+                }
+            }
+        }
+        return puj;
+    }
 }
