@@ -10,7 +10,6 @@ public static void main(String[] args) {
     tema=new Tema("Fantasía épica");
     libro.addtemas(tema);
     System.out.println(autor+" ---------> "+libro);
-
     autor=new Autor("Manel","5 de marzo de 1969");
     libro=new Libro("sdf",autor,9);
     tema=new Tema("Terror");
