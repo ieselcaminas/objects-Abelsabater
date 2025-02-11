@@ -20,11 +20,14 @@ public class Main {
         Puja puja1=new Puja(101,1,lote1,pujador1);
         lote1.addp(puja1);
         pujador1.addp(puja1);
-        Puja puja2=new Puja(110,1,lote1,pujador1);
+        Puja puja2=new Puja(110,2,lote1,pujador1);
         lote1.addp(puja2);
         pujador1.addp(puja2);
 
         subasta.addL(lote1);
         subastas.add(subasta);
+       for (Subasta s:subastas){
+           System.out.println(s.Stringvictoria());
+       }
     }
 }

@@ -24,15 +24,21 @@ public class Subasta {
         this.lotes.add(lote);
     }
 
-    public double haganado(){
+    public Pujador haganado(){
         double puj=0;
+        Pujador ganador = null;
         for (Lote lot:lotes){
             for (Puja puja:lot.getPujas()){
                 if(puja.getCantidad()>puj){
                     puj=puja.getCantidad();
+                    ganador=puja.getPujador();
                 }
             }
         }
-        return puj;
+        return ganador;
+    }
+
+    public String Stringvictoria(){
+        return "Ha ganado "+haganado();
     }
 }

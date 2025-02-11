@@ -57,4 +57,8 @@ public class Lote {
     public void addp(Puja puja){
         this.pujas.add(puja);
     }
+    @Override
+    public String toString(){
+        return "Este es el lote "+this.cod;
+    }
 }

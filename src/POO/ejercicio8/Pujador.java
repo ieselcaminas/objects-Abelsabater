@@ -33,4 +33,8 @@ public class Pujador {
     public void addp(Puja puja) {
         this.pujas.add(puja);
     }
+    @Override
+    public String toString(){
+        return this.nombre;
+    }
 }

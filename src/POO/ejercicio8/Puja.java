@@ -13,6 +13,10 @@ public class Puja {
         this.pujador=pujador;
     }
 
+    public Pujador getPujador() {
+        return pujador;
+    }
+
     public int getCod() {
         return cod;
     }
@@ -31,5 +35,9 @@ public class Puja {
 
     public void setLote(Lote lote) {
         this.lote = lote;
+    }
+    @Override
+    public String toString(){
+        return this.pujador+" realiza una puja de "+this.cantidad;
     }
 }
