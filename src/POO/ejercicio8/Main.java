@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         List<Subasta>subastas=new ArrayList<>();
         Subasta subasta=new Subasta(1);
-
+        Pujador pujador1=new Pujador("Abel","20970899M");
 
         Lote lote1=new Lote(1);
 
@@ -17,10 +17,12 @@ public class Main {
         Articulo articulo2=new Articulo("Bicicleta",79);
         lote1.adda(articulo2);
 
-        Puja puja1=new Puja(101,1,lote1);
+        Puja puja1=new Puja(101,1,lote1,pujador1);
         lote1.addp(puja1);
-        Puja puja2=new Puja(110,1,lote1);
+        pujador1.addp(puja1);
+        Puja puja2=new Puja(110,1,lote1,pujador1);
         lote1.addp(puja2);
+        pujador1.addp(puja2);
 
         subasta.addL(lote1);
         subastas.add(subasta);
