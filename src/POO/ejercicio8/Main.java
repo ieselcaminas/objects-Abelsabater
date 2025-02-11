@@ -5,7 +5,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Subasta>subastas=new ArrayList<>();
+
+        CasaSubasta casaSubasta=new CasaSubasta(1,"casasub");
+
         Subasta subasta=new Subasta(1);
         Pujador pujador1=new Pujador("Abel","20970899M");
 
@@ -25,11 +27,9 @@ public class Main {
         Puja puja2=new Puja(110,2,lote1,pujador2);
         lote1.addp(puja2);
         pujador2.addp(puja2);
-
         subasta.addL(lote1);
-        subastas.add(subasta);
-       for (Subasta s:subastas){
-           System.out.println(s.Stringvictoria());
-       }
+        casaSubasta.adds(subasta);
+
+        System.out.println(casaSubasta.getSubastas().get(0).Stringvictoria());
     }
 }
