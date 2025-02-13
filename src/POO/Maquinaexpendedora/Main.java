@@ -21,6 +21,6 @@ public class Main {
         }
 
         Cliente cliente=new Cliente(5);
-
+        cajon.setCantidad(cliente.getCantidad());
     }
 }

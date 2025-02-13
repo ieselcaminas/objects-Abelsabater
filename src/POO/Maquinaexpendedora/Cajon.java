@@ -39,6 +39,17 @@ public class Cajon {
     public void setCantidad(double cantidad) {
         this.cantidad = cantidad;
     }
+    public void quantostiquets(){
+        int i=1;
+        while (getCantidad()!=0){
+            if(getCantidad()<tiquets.get(0).getPrecio()*i){
+                break;
+            }else{
+                setCantidad(getCantidad()-tiquets.get(0).getPrecio()*i);
+                i+=1;
+            }
+        }
+    }
 
     public void devolvercanvio(){
         List<Double> cambio=new ArrayList<>();

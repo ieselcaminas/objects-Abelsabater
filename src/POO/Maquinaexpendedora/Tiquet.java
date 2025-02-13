@@ -6,4 +6,7 @@ public class Tiquet {
     public Tiquet() {
         this.precio=1.20;
     }
+    public double getPrecio() {
+        return precio;
+    }
 }
