@@ -42,6 +42,9 @@ public class Cajon {
     public void quantostiquets(){
         int i=1;
         while (getCantidad()!=0){
+            if(getCantidad()-tiquets.get(0).getPrecio()*i==0){
+                break;
+            }
             if(getCantidad()<tiquets.get(0).getPrecio()*i){
                 break;
             }else{
@@ -50,7 +53,6 @@ public class Cajon {
             }
         }
     }
-
     public void devolvercanvio(){
         List<Double> cambio=new ArrayList<>();
         while (getCantidad()!=0){
