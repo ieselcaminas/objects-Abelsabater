@@ -50,7 +50,11 @@ public class Lote {
     public List<Articulo> getArticulos() {
         return articulos;
     }
-
+    public void adjudicado(){
+        if(this.articulos.size()==0){
+            System.out.println("No adjudicado");
+        }
+    }
     public void adda(Articulo articulo){
         this.articulos.add(articulo);
     }
