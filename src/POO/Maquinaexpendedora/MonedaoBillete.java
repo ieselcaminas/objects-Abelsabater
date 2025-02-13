@@ -1,18 +1,18 @@
 package POO.Maquinaexpendedora;
 
 public class MonedaoBillete {
-    private int precio;
+    private double precio;
     private Cajon cajon;
 
-    public MonedaoBillete(int precio) {
+    public MonedaoBillete(double precio) {
         this.precio = precio;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
