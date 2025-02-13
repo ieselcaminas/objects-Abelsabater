@@ -15,5 +15,12 @@ public class Main {
         monedaoBillete=new MonedaoBillete(5);
         cajon.addm(monedaoBillete);
 
+        Tiquet tiquet=new Tiquet();
+        for (int i = 0; i < 1000000000; i++) {
+            cajon.addt(tiquet);
+        }
+
+        Cliente cliente=new Cliente(5);
+
     }
 }

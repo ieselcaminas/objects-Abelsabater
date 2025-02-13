@@ -7,13 +7,25 @@ public class Cajon {
     private int cod;
     private List<MonedaoBillete>monedaoBilletes;
     private double cantidad;
+    private List<Tiquet>tiquets;
 
     public Cajon(int cod) {
         this.cod = cod;
         this.monedaoBilletes=new ArrayList<>();
+        this.tiquets=new ArrayList<>();
     }
     public void addm(MonedaoBillete monedaoBillete){
         this.monedaoBilletes.add(monedaoBillete);
+    }
+    public void addt(Tiquet tiquet){
+        this.tiquets.add(tiquet);
+    }
+    public List<MonedaoBillete> getMonedaoBilletes() {
+        return monedaoBilletes;
+    }
+
+    public List<Tiquet> getTiquets() {
+        return tiquets;
     }
 
     public int getCod() {
