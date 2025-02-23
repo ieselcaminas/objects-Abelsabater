@@ -1,5 +1,5 @@
 package herencia;
-public interface SaberJugar {
+public interface Jugar {
         void saltarPorUnAro();
         void perseguirUnObjeto();
 }
